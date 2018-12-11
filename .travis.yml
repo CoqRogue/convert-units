@@ -3,3 +3,18 @@ node_js:
   - "6"
   - "5"
 
+env:
+  global:
+    # COVERITY_SCAN_TOKEN
+    # ** specific to your project **
+    - secure: "xxxx"
+
+addons:
+  coverity_scan:
+
+    # GitHub project metadata
+    # ** specific to your project **
+    project:
+      name: CoqRogue/convert-units
+      version: 1.0
+      description: My Project
